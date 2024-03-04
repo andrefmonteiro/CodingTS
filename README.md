@@ -1,2 +1,2 @@
-# codingjs-problems
-Resolution of CodingJS problems
+# CodingJS
+Resolution of [CodingJS](https://the-winter.github.io/codingjs/) problems, for DSA practice.
