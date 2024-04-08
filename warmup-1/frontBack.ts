@@ -14,8 +14,8 @@ function frontBack(str: string): string {
 		return str;
 	}
 
-	let firstChar: string = str.charAt(0);
-	let lastChar: string = str.charAt(str.length - 1);
+	const firstChar: string = str.charAt(0);
+	const lastChar: string = str.charAt(str.length - 1);
 
 	return lastChar + str.substring(1, str.length - 1) + firstChar;
 }
