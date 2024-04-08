@@ -8,7 +8,6 @@ sleepIn(true, false) → false
 sleepIn(false, true) → true
 */
 
-function sleepIn(weekday, vacation){
-
-     return !weekday || vacation ? true : false;
+function sleepIn(weekday: boolean, vacation: boolean): boolean {
+	return !weekday || vacation ? true : false;
 }

@@ -8,11 +8,9 @@
      delDel('abcdel') → abcdel
 */
 
-function delDel(str) {
-
-     if (str.length >= 4 && str.substring(1, 4).toLowerCase() === "del") {
-
-          return str.charAt(0) + str.substring(4);
-     }
-     return str;
+function delDel(str: string): string {
+	if (str.length >= 4 && str.substring(1, 4).toLowerCase() === "del") {
+		return str.charAt(0) + str.substring(4);
+	}
+	return str;
 }
