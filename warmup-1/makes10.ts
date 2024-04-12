@@ -9,6 +9,5 @@ makes10(1, 9) → true
 */
 
 function makes10(a: number, b: number): boolean {
-
-     return a === 10 || b === 10 || a + b === 10 ? true : false;     
+	return a === 10 || b === 10 || a + b === 10 ? true : false;
 }
