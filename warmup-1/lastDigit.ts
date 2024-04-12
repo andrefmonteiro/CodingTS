@@ -12,6 +12,12 @@ lastDigit(3, 113) → true
 // last digit == remainder of num / 10 => num % 10
 
 function hasSameLastDigit(a: number, b: number): boolean {
-     
-     return a % 10 === b % 10;
+	return a % 10 === b % 10;
+}
+
+// check if any given number of ints has the same last digit
+function alternativeHasSameLastDigit(...nums: number[]): boolean {
+	const lastDigit = nums[0] % 10;
+
+	return nums.every((n) => n % 10 === lastDigit);
 }
