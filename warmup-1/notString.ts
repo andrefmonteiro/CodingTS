@@ -13,8 +13,9 @@ notString('not bad') → not bad
 // if so, return string
 // if not, add "not " to the beginning
 
-function notStrign(str: string): string {
-	if (str.toLocaleLowerCase().startsWith("not")) return str;
+function notString(str: string): string {
+	// if (str.toLocaleLowerCase().startsWith("not")) return str;
+	if (str.startsWith("not")) return str;
 
 	return "not " + str;
 }
