@@ -11,4 +11,10 @@ icyHot(2, 120) → false
 
 function icyHot(temp1: number, temp2: number): boolean {
 	return (temp1 < 0 && temp2 > 100) || (temp1 > 100 && temp2 < 0);
+
+}
+//refactor for more than 2 temps:
+
+function anyIcyHot(...temps: number[]): boolean {
+     return temps.some(t => t < 0) && temps.some(t => t > 100);
 }
