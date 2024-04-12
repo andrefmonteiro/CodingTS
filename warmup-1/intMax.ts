@@ -10,7 +10,6 @@
 */
 
 function intMax(a: number, b: number, c: number): number {
-     
-     return Math.max(a, b, c);
-     // Java's Math.max() only takes in 2 params :)
+	return Math.max(a, b, c);
+	// Java's Math.max() only takes in 2 params :)
 }
