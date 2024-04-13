@@ -17,9 +17,5 @@ function loneTeen(num1: number, num2: number) {
 		return n >= 13 && n <= 19;
 	}
 
-	if (isTeen(num1)) {
-		return !isTeen(num2);
-	}
-
-	return isTeen(num2);
+	return isTeen(num1) != isTeen(num2)
 }
