@@ -15,19 +15,16 @@ function plusTwo(array1: number[], array2: number[]): number[] {
 
      /*
      Alternative solution
-
-     return [...array1, array2]
+          return [...array1, array2]
      */
-
 
      /*
      Alternative solution
 
-     const finalArray: number[] = [];
+          const finalArray: number[] = [];
 
-     finalArray.push(...array1);
-     finalArray.push(...array2);
-
-     return finalArray;
+          finalArray.push(...array1);
+          finalArray.push(...array2);
+          return finalArray;
      */
 }
