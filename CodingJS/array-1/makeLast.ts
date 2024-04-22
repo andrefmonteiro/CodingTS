@@ -10,10 +10,10 @@ makeLast([3]) → 0,3
 */
 
 function makeLast(array: number[]): number[] {
-     
-     // get original length
-     // get last element
-     // repeat 0: double original length - 1
 
-          
+     const lastElement: number = array[array.length - 1]
+     
+     const finalArray: number[] = new Array(array.length * 2).fill(0)
+     finalArray[finalArray.length - 1] = lastElement
+     return finalArray
 }
