@@ -9,5 +9,12 @@
 */
 
 function stringTimes(str: string, int: number): string {
+     let finalString: string = "";
+     for (let i = 1; i <= int; i++){
+          finalString += str;
+     }
+     return finalString;
+     
+     // alternative way
      return str.repeat(int);
 }
