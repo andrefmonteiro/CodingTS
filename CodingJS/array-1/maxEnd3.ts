@@ -8,7 +8,7 @@
      maxEnd3([2, 11, 3]) → 3,3,3
 */
 
-function maxEnd3(array: [number]): [number] {
+function maxEnd3(array: number[]): number[] {
 
      const maxValue: number = Math.max(array[0], array[array.length - 1]);
      return array.fill(maxValue);
