@@ -4,8 +4,13 @@
 
 function biggerTwo(a: number[], b: number[]): number[] {
 
-     const sumA = a[0] + a[1];
-     const sumB = b[0] + b[1];
+     // const sumB = b[0] + b[1];
+     // const sumA = a[0] + a[1];
+     // return sumB > sumA ? b : a;
 
-     return sumB > sumA ? b : a;
+     // using destructuring
+     const [a1 = 0, a2 = 0] = a;
+     const [b1 = 0, b2 = 0] = b;
+
+     return (b1 + b2) > (a1 + a2) ? b : a;
 }
