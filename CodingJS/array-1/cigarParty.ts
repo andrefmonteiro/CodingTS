@@ -14,4 +14,14 @@ function cigarParty(nCigars: number, weekend: boolean): boolean {
           return weekend ? true : (nCigars <= 60)
      }
      return false;
+
+     /*
+          we have 2 if checks (a number value check and a boolean value check)
+          although negligible, it is technically more performant if we have the boolean check first:
+
+          if (weekend) {
+               return nCigars >= 40
+          }
+          return nCigars >= 40 && nCigars <= 60
+     */
 }
