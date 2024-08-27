@@ -15,6 +15,7 @@ stringX('xabxxxcdx') → xabcdx
 
 
 function stringX(str: string): string {
+	/*
 	if (str.length === 0) return str;
 
 	let editedWord: string = "";
@@ -29,4 +30,13 @@ function stringX(str: string): string {
 	editedWord += str[str.length - 1]
 
 	return editedWord;
+	*/
+
+	if (str.length < 1) return str;
+
+	const firstChar = str[0];
+	const lastChar = str[str.length - 1];
+	const middle = str.slice(1, -1).split('').filter(char => char !== 'x').join('');
+
+	return firstChar + middle + lastChar;
 }
